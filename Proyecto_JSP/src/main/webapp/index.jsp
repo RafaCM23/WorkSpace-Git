@@ -34,11 +34,23 @@
         
         	String nombre= request.getParameter("nombre");
       		String apellido= request.getParameter("apellido");
+      		Integer edad = Integer.parseInt(request.getParameter("edad"));
+      		String curso = request.getParameter("curso");
+      		String dni = request.getParameter("dni");
+      		
+      		
+      		
       		
       		if((nombre.isEmpty()) || nombre.length()<3){
       			errorMsgs.add("El nombre no es correcto");  } 
       		if((apellido.isEmpty()) || apellido.length()<3){
       			errorMsgs.add("El apellido no es correcto");  } 
+      		if(edad<3 || edad>80){
+      			errorMsgs.add("El apellido no es correcto");
+      		}
+      		if(true){
+      			
+      		}
       		
       		String regexpCurso ="([1-4]º(ESO))|([1-2]º(BACH|DAW))";
 			//to uppercase
