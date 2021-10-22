@@ -1,3 +1,4 @@
+package jacaranda;
 import java.util.ArrayList;
 
 public class Colegio {

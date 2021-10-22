@@ -11,52 +11,29 @@
 <link href="css/alumnos.css" rel="stylesheet" type="text/css">
 <body>
 
-	<% Colegio nuevo = new Colegio(); %>
+	
 	<div class="contenedor">
         <h1>Creacion de Alumnos</h1>
         <div class="seccion">
-    <form>
+    <form action="resultado.jsp" method="POST">
         <label for="nombre">Nombre:</label>       <input type="text" name="nombre" id="nombre"> <br>
         <hr>
         <label for="apellido">Apellido:</label>        <input type="text" name="apellido" id="apellido"> <br>
         <hr>
-        <label for="edad">Edad:</label>        <input type="number" name="edad" id="fechanac" min="3" max="18"> <br>
+        <label for="edad">Edad:</label>        <input type="number" name="edad" id="edad" min="3" max="18"> <br>
         <hr>
         <label for="curso">Curso:</label>        <input type="text" name="curso" id="curso" > <br>
         <hr>
         <label for="dni">DNI:</label>        <input type="text" name="dni" id="dni"> <br>
         <hr>
         
-        <input type="button" value="Registrar Alumno" id="boton">
+        <input type="submit" value="enviar" id="boton">
         
-        <% //Validación formulario
-        	ArrayList<String> errorMsgs = new ArrayList<String>();
-        
-        	String nombre= request.getParameter("nombre");
-      		String apellido= request.getParameter("apellido");
-      		Integer edad = Integer.parseInt(request.getParameter("edad"));
-      		String curso = request.getParameter("curso");
-      		String dni = request.getParameter("dni");
-      		
-      		
-      		
-      		
-      		if((nombre.isEmpty()) || nombre.length()<3){
-      			errorMsgs.add("El nombre no es correcto");  } 
-      		if((apellido.isEmpty()) || apellido.length()<3){
-      			errorMsgs.add("El apellido no es correcto");  } 
-      		if(edad<3 || edad>80){
-      			errorMsgs.add("El apellido no es correcto");
-      		}
-      		if(true){
-      			
-      		}
-      		
-      		String regexpCurso ="([1-4]º(ESO))|([1-2]º(BACH|DAW))";
-			//to uppercase
+        <% 
         %>
     </form>
     </div>
 </div>
+
 </body>
 </html>

@@ -1,0 +1,35 @@
+//Validación formulario
+        
+        	
+//         	ArrayList<String> errorMsgs = new ArrayList<String>();
+        
+//         	String nombre= request.getParameter("nombre");
+//       		String apellido= request.getParameter("apellido");
+//       		Integer edad = Integer.parseInt(request.getParameter("edad"));
+//       		String curso = request.getParameter("curso");
+//       		String dni = request.getParameter("dni");
+      		
+      		
+//       		String regexpCurso ="([1-4]º(ESO))|([1-2]º(BACH|DAW))";
+//       		String regexpDni="[1-9][0-9]{7,8}[A-Z]";
+      		
+//       		if((nombre.isEmpty()) || nombre.length()<3){
+//       			errorMsgs.add("El nombre no es correcto");  } 
+//       		if((apellido.isEmpty()) || apellido.length()<3){
+//       			errorMsgs.add("El apellido no es correcto");  } 
+//       		if(edad<3 || edad>80){
+//       			errorMsgs.add("El apellido no es correcto");
+//       		}
+//       		if(!curso.matches(regexpCurso)){
+//       			errorMsgs.add("El curso es incorrecto");
+//       		}
+//       		if(!dni.matches(regexpDni)){
+//       			errorMsgs.add("El DNI es incorrecto");
+//       		}
+      		
+      		
+        //enviar formulario, recogerla en otra y mostrarla
+        //En el formulario solo se recopila(request) informacion, luego se le hace un submit a otro jsp
+        //ese segundo jsp recopila, verifica y crea el bean
+        //
+			//to uppercase

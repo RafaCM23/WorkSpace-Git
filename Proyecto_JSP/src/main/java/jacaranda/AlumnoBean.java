@@ -1,3 +1,4 @@
+package jacaranda;
 
 public class AlumnoBean {
 //cambio de ejemplo
@@ -47,6 +48,12 @@ public class AlumnoBean {
 
 	public void setDni(String dni) {
 		this.dni = dni;
+	}
+
+	@Override
+	public String toString() {
+		return "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", curso=" + curso
+				+ ", dni=" + dni;
 	}
 
 	
