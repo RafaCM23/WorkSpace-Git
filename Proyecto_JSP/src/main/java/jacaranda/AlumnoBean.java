@@ -1,13 +1,15 @@
 package jacaranda;
 
 public class AlumnoBean {
-//cambio de ejemplo
+
 	private String nombre;
 	private String apellido;
 	private Integer edad;
 	private String curso;
 	private String dni;
-	
+	/**
+	 * Este metodo esta vacio porque es de tipo Bean
+	 */
 	public AlumnoBean() {}
 
 	public String getNombre() {

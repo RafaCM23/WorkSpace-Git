@@ -1,9 +1,9 @@
 <%@page import="jacaranda.AlumnoBean"%>
 <%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8" lang="es"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Colegio</title>
@@ -43,12 +43,14 @@ input[type='button']{
 }
 </style>
 <body>
-		
+		<!-- En esta pagina mostramos los datos finales del colegio y sus alumnos-->
 		<jsp:useBean id="colegio" class="jacaranda.Colegio" scope="session"/>
 		<jsp:setProperty name="colegio" property="*"/>
 		<div class="contenedor">
 		<h1>Colegio</h1>
 		<h3>Numero de alumnos: <%= colegio.numeroAlumnos() %> </h3>
+		<!-- En el caso de que se abra esta pagina sin ningun dato cargado nos moveria
+			automaticamente a la pagina de error predeterminada (error.jsp)-->
 		<% if(colegio.numeroAlumnos()==0){
 			
 		 %><jsp:forward page = "error.jsp" />

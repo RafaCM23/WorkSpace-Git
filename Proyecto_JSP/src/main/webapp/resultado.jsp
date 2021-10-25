@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Resultado</title>
@@ -40,7 +40,7 @@ input[type='submit']{
   margin-top: 2em;
 }
 </style>
-<body>
+<body><!-- En esta pagina recibimos los datos del index.jsp y creamos e inicializamos el alumno -->
 		<jsp:useBean id="alumno" class="jacaranda.AlumnoBean" scope="page"/>
 		<jsp:setProperty name="alumno" property="*"/>
 		<div class="contenedor">
@@ -64,7 +64,7 @@ input[type='submit']{
 		<form action="colegio.jsp" method="POST">
 		<jsp:useBean id="colegio" class="jacaranda.Colegio" scope="session"/>
 		<jsp:setProperty name="colegio" property="nombre" value="Jacaranda"/>
-		
+		<!-- Tambien creamos el colegio y le añadimos el alumno -->
 		
 		<input type="submit" value="Añadir al Colegio" id="enviar">
 		<% colegio.listaAlumnos.add(alumno); %>

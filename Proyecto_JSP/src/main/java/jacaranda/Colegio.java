@@ -7,7 +7,7 @@ public class Colegio {
 	public ArrayList<AlumnoBean> listaAlumnos;
 	
 	public Colegio(){
-		this.listaAlumnos=new ArrayList<AlumnoBean>();
+		this.listaAlumnos=new ArrayList<>();
 		}
 	
 	public String getNombre() {
@@ -22,9 +22,17 @@ public class Colegio {
 	public void setListaAlumnos(ArrayList<AlumnoBean> listaAlumnos) {
 		this.listaAlumnos = listaAlumnos;
 	}
+	/**
+	 * Este metodo devuelve el numero de alumnos que hay en el colegio
+	 * @return numero de alumnos (int)
+	 */
 	public int numeroAlumnos() {
 		return listaAlumnos.size();
 	}
+	/**
+	 * Este metodo recibe un alumno y lo anade a la lista de alumnos del colegio
+	 * @param al de tipo AlumnoBean
+	 */
 	public void anadirAlumno(AlumnoBean al) {
 		listaAlumnos.add(al);
 	}

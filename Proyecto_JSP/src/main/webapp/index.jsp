@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Primer Proyecto</title>
@@ -45,7 +45,7 @@ input[type='submit']{
 </style>
 <body>
 
-	
+	<!-- En esta pagina  tenemos un formulario con todos los datos del alumno-->
 	<div class="contenedor">
         <h1>Creacion de Alumnos</h1>
         <div class="seccion">
@@ -60,7 +60,7 @@ input[type='submit']{
         <hr>
         <label for="dni">DNI:</label>        <input type="text" name="dni" id="dni"> <br>
         <hr>
-        
+        <!-- Con submit enviamos los datos a la siguiente pagina (resultado.jsp) -->
         <input type="submit" value="enviar" id="boton">
         
         <% 
