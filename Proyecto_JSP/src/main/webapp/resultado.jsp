@@ -64,10 +64,13 @@ input[type='submit']{
 		<form action="colegio.jsp" method="POST">
 		<jsp:useBean id="colegio" class="jacaranda.Colegio" scope="session"/>
 		<jsp:setProperty name="colegio" property="nombre" value="Jacaranda"/>
-		<% colegio.listaAlumnos.add(alumno);%>
-		<input type="submit" value="Añadir al Colegio" id="boton">
+		
+		
+		<input type="submit" value="Añadir al Colegio" id="enviar">
+		<% colegio.listaAlumnos.add(alumno); %>
 		</form>
 		</div>
+		<script src="resultado.js"></script>
 	
 </body>
 </html>

@@ -25,5 +25,7 @@ public class Colegio {
 	public int numeroAlumnos() {
 		return listaAlumnos.size();
 	}
-	
+	public void anadirAlumno(AlumnoBean al) {
+		listaAlumnos.add(al);
+	}
 }
