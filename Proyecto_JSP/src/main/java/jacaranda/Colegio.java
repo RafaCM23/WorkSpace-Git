@@ -22,6 +22,8 @@ public class Colegio {
 	public void setListaAlumnos(ArrayList<AlumnoBean> listaAlumnos) {
 		this.listaAlumnos = listaAlumnos;
 	}
-	
+	public int numeroAlumnos() {
+		return listaAlumnos.size();
+	}
 	
 }

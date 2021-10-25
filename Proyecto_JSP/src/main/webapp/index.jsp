@@ -9,6 +9,19 @@
 <title>Primer Proyecto</title>
 </head>
 <link href="css/alumnos.css" rel="stylesheet" type="text/css">
+<style>
+.contenedor{
+    height: 1000px;
+    width: 700px;
+    align-items: center;
+    margin-top: 5%;
+    font-size: x-large;
+    float: left;
+    margin-left: 10%;
+}
+h1{
+	color:#5B7B7A;}
+</style>
 <body>
 
 	

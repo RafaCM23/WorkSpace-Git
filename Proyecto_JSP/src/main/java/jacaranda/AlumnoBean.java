@@ -52,7 +52,7 @@ public class AlumnoBean {
 
 	@Override
 	public String toString() {
-		return "nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", curso=" + curso
+		return "\n"+"nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", curso=" + curso
 				+ ", dni=" + dni;
 	}
 
