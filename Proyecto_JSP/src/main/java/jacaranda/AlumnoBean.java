@@ -52,8 +52,8 @@ public class AlumnoBean {
 
 	@Override
 	public String toString() {
-		return "\n"+"nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", curso=" + curso
-				+ ", dni=" + dni;
+		return "\n"+"Nombre=" + nombre + " | Apellido=" + apellido + " | Edad=" + edad + " | Curso=" + curso
+				+ ", | DNI=" + dni;
 	}
 
 	
