@@ -6,7 +6,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Primer Proyecto</title>
+<title>Creacion de Alumnos</title>
 </head>
 <link href="css/alumnos.css" rel="stylesheet" type="text/css">
 <style>
@@ -54,7 +54,7 @@ input[type='submit']{
         <hr>
         <label for="apellido">Apellido:</label>        <input type="text" name="apellido" id="apellido"> <br>
         <hr>
-        <label for="edad">Edad:</label>        <input type="number" name="edad" id="edad" min="3" max="18"> <br>
+        <label for="edad">Edad:</label>        <input type="number" name="edad" id="edad" min="3" max="50"> <br>
         <hr>
         <label for="curso">Curso:</label>        <input type="text" name="curso" id="curso" > <br>
         <hr>
