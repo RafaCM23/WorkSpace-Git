@@ -46,10 +46,21 @@ p{
     text-align: center;
 }
 img{
-    width: 140px;
+    width: 170px;
     height: auto;
 }
+img.esp1{
+    width: 110px;
+    height: auto;
+}
+img.esp2{
+    width: 140px;
+    height: auto;
 
+}
+#cantidad1{
+    margin-top: 0.5em;
+}
 .basic header {
     grid-area: header;
 }

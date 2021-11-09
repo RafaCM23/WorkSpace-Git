@@ -5,6 +5,7 @@ public class ProductoBean {
 	private int id;
 	private String nombre;
 	private Double precio;
+	private String img;
 	
 	
 	public ProductoBean() {
@@ -28,6 +29,12 @@ public class ProductoBean {
 	}
 
 
+	public String getImg() {
+		return img;
+	}
+	public void setImg(String img) {
+		this.img = img;
+	}
 	public String getNombre() {
 		return nombre;
 	}

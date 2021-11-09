@@ -30,20 +30,13 @@ button:hover{
     color:white;
     background-color:#000000;
     }
-.resumen{
- float: left;
-  width: 400px;
-  height: auto;
-  margin-left: 2em;
-  background-image: linear-gradient(-180deg, #E6E2AF 0%, #002F2F 100%);
-  box-shadow: 10px 5px 5px black;
-}
-.formulario{
-float:left;
-margin-left:8em;
+
+.pedido{
+margin-left: auto;
+margin-right: auto;
 width: 500px;
 height: auto;
-text-align: left;
+text-align: center;
+background-image: linear-gradient(-180deg, #E6E2AF 0%, #002F2F 100%);
+  box-shadow: 10px 5px 5px black;
 }
-
-
