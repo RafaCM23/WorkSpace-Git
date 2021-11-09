@@ -8,6 +8,8 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,10 +33,10 @@ public class ServletPedido extends HttpServlet {
         super();
     }
 
-	//Hay que hacer server de login para autenticar usuario
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession sesion = request.getSession(false);
-		PrintWriter print = response.getWriter();
+		
 		if(sesion.getAttribute("usuario")==null|| sesion.getAttribute("usuario").equals("nologeado")) {
 			String url = "Error.jsp";
 			response.sendRedirect(url);
@@ -94,9 +96,9 @@ public class ServletPedido extends HttpServlet {
 			
 			
 			
-			PrintWriter print;
+			
 			try {
-				print = response.getWriter();
+				PrintWriter print = response.getWriter();
 				print.println("<!DOCTYPE html>\n"
 						+ "			<html lang=\"es\">\n"
 						+ "			<head>\n"
@@ -123,17 +125,17 @@ public class ServletPedido extends HttpServlet {
 						+ "			        <form action=\"Final\" method=\"POST\">\n"
 						+ "			        <label for=\"codPost\">*Cod Postal:</label>"
 						+ "<input type=\"number\" name=\"codPost\" id=\"codPost\" min=\"10000\" max=\"99999\" placeholder=\"ej: 41300...\" required>\n"
-						+ "			        <br>\n"
+						+ "<br>\n"
 						+ "			        <label for=\"calle\">*Calle:</label><input type=\"text\" name=\"calle\" id=\"calle\" placeholder=\"Calle/via/avenida\" required>\n"
-						+ "			        <label for=\"numero\">*num:</label><input type=\"number\" name=\"numero\" id=\"numero\" min=\"0\" max=\"150\" placeholder=\"ej: 99\" required>\n"
-						+ "			        <br>\n"
-						+ "			        <label for=\"piso\">*Puerta:</label><input type=\"text\" name=\"numero\" id=\"piso\" placeholder=\"ej:2Âº C\" size=\"3\" maxlength=\"4\" required>\n"
-						+ "			        <br>\n"
+						+ "			        <label for=\"numero\">num:</label><input type=\"number\" name=\"numero\" id=\"numero\" min=\"0\" max=\"150\" placeholder=\"ej: 99\" required>\n"
+						+ "<br>\n"
+						+ "			        <label for=\"piso\">*Puerta:</label><input type=\"text\" name=\"numero\" id=\"piso\" placeholder=\"ej:2Aº C\" size=\"3\" maxlength=\"4\" required>\n"
+						+ "<br>\n"
 						+ "			        <pre><h2>         Metodos de pago</h2></pre>\n"
 						+ "			        <input type=\"radio\" name=\"metodoPago\" id=\"pagoTarjeta\" required>Tarjeta</input>\n"
 						+ "			        <input type=\"radio\" name=\"metodoPago\" id=\"pagoContra\" required>Contrareembolso</input>\n"
 						+ "			        <input type=\"radio\" name=\"metodoPago\" id=\"pagoCrypto\" required>Crypto</input>\n"
-						+ "			        <br>\n"
+						+ "<br>\n"
 						+ "			        <button type=\"submit\">Proceder</button>\n <br><br>"
 						+ "\n"
 						+ "			    </form>\n"
@@ -143,16 +145,18 @@ public class ServletPedido extends HttpServlet {
 						+ "\n"
 						+ "    </form>"
 						+ "			    </div>\n"
-						+ "			    \n"
 						+ "\n"
-						+ "			    \n"
-						+ "			    \n"
+						+ "\n"
+						+ "\n"
+						+ "n"
 						+ "			</body>\n"
 						+ "			</html>");
 				
 				
 			} catch (IOException e) {
-				System.out.println(e.getMessage());
+				final Logger LOG = Logger.getLogger(ServletPedido.class.getName());
+				LOG.log(Level.SEVERE,e.getMessage());
+				
 			}
 			
 					
@@ -161,7 +165,7 @@ public class ServletPedido extends HttpServlet {
 	
 	
 
-	
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}

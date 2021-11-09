@@ -60,7 +60,7 @@ public class ProductoBean {
 		return Objects.hash(nombre, precio);
 	}
 
-
+	
 	public boolean equals(ProductoBean obj) {
 		if (this.id == obj.id)
 			return true;

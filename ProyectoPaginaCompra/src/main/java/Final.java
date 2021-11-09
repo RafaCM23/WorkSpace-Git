@@ -24,7 +24,7 @@ public class Final extends HttpServlet {
        
     }
 
-
+    @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		HttpSession sesion = request.getSession(false);
@@ -42,7 +42,7 @@ public class Final extends HttpServlet {
 				+ "		<html lang=\"es\">\n"
 				+ "		<head>\n"
 				+ "		    <meta charset=\"UTF-8\">\n"
-				+ "		    <title>· CHECKOUT ·</title>\n"
+				+ "		    <title>· CONFIRMACION ·</title>\n"
 				+ "		</head>\n"
 				+ "		<link rel=\"stylesheet\" href=\"HTML/final.css\">\n"
 				+ "		<body>\n"
@@ -50,7 +50,7 @@ public class Final extends HttpServlet {
 				+ "		    <div class=\"contenedor\">\n"
 				+ "		       \n"
 				+ "		    </div>\n"
-				+ "		    \n"
+				+ "\n"
 				+ "		    <div class=\"pedido\">\n");
 				Double total=0.0;
 				 for (ProductoBean p : ordenada) {
@@ -76,19 +76,19 @@ public class Final extends HttpServlet {
 				+ "\n"
 				+ "    </form>"
 				+ "		    </div>\n"
-				+ "		    \n"
 				+ "\n"
-				+ "		    \n"
-				+ "		    \n"
+				+ "\n"
+				+ "\n"
+				+ "\n"
 				+ "		</body>\n"
 				+ "		</html>");
 		
 		
 	}
 
-	
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+
 		doGet(request, response);
 	}
 
