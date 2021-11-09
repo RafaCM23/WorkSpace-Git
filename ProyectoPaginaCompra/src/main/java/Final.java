@@ -42,7 +42,7 @@ public class Final extends HttpServlet {
 				+ "		<html lang=\"es\">\n"
 				+ "		<head>\n"
 				+ "		    <meta charset=\"UTF-8\">\n"
-				+ "		    <title>· CONFIRMACION ·</title>\n"
+				+ "		    <title>Â· CONFIRMACION Â·</title>\n"
 				+ "		</head>\n"
 				+ "		<link rel=\"stylesheet\" href=\"HTML/final.css\">\n"
 				+ "		<body>\n"
@@ -59,11 +59,11 @@ public class Final extends HttpServlet {
 					};
 					
 					
-					print.println("<br>Total: "+total+"€");
+					print.println("<br>Total: "+total+"â¬");
 					Double impuestos=total*0.2;
-					print.println("<br>Impuestos: "+impuestos+"€");
+					print.println("<br>Impuestos: "+impuestos+"â¬");
 					Double totalImpuestos=total+impuestos;
-					print.println("<br>Total Final: "+totalImpuestos+"€");
+					print.println("<br>Total Final: "+totalImpuestos+"â¬");
 					
 				print.print("		        <form action=\"HTML/catalogo.html\" method=\"POST\">\n"
 				+ "		       \n"

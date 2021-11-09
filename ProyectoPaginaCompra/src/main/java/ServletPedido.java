@@ -120,7 +120,7 @@ public class ServletPedido extends HttpServlet {
 					};
 					
 					
-					print.println("<br>Total: "+total+"€");
+					print.println("<br>Total: "+total+"â¬");
 				print.println( "</div>\n   <div class=\"formulario\">\n"
 						+ "			        <form action=\"Final\" method=\"POST\">\n"
 						+ "			        <label for=\"codPost\">*Cod Postal:</label>"
@@ -129,7 +129,7 @@ public class ServletPedido extends HttpServlet {
 						+ "			        <label for=\"calle\">*Calle:</label><input type=\"text\" name=\"calle\" id=\"calle\" placeholder=\"Calle/via/avenida\" required>\n"
 						+ "			        <label for=\"numero\">num:</label><input type=\"number\" name=\"numero\" id=\"numero\" min=\"0\" max=\"150\" placeholder=\"ej: 99\" required>\n"
 						+ "<br>\n"
-						+ "			        <label for=\"piso\">*Puerta:</label><input type=\"text\" name=\"numero\" id=\"piso\" placeholder=\"ej:2Aº C\" size=\"3\" maxlength=\"4\" required>\n"
+						+ "			        <label for=\"piso\">*Puerta:</label><input type=\"text\" name=\"numero\" id=\"piso\" placeholder=\"ej:2AºC\" size=\"3\" maxlength=\"4\">\n"
 						+ "<br>\n"
 						+ "			        <pre><h2>         Metodos de pago</h2></pre>\n"
 						+ "			        <input type=\"radio\" name=\"metodoPago\" id=\"pagoTarjeta\" required>Tarjeta</input>\n"
@@ -148,7 +148,7 @@ public class ServletPedido extends HttpServlet {
 						+ "\n"
 						+ "\n"
 						+ "\n"
-						+ "n"
+						+ "\n"
 						+ "			</body>\n"
 						+ "			</html>");
 				
